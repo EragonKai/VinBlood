@@ -1,0 +1,14 @@
+3/19/2019
+    - package structure set up
+    - framework (display, object controller, game object) arranged
+    - entity class structure
+    - working animation for player
+    - loading enemy stats from xml
+    - ok behavior system for enemies
+    - goblin / projectile goblin
+    - enemy health displayed
+    - ResourceManager done + assets gathered
+    - stat manager system
+    - "death" for game objects
+    - projectiles
+    - username prompt (fake client connection for now)
