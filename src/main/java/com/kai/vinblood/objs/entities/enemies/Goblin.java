@@ -1,6 +1,8 @@
 package com.kai.vinblood.objs.entities.enemies;
 
 import com.kai.vinblood.core.Game;
+import com.kai.vinblood.objs.entities.enemies.load.CombatBehavior;
+import com.kai.vinblood.objs.entities.enemies.load.EnemyLoader;
 import com.kai.vinblood.util.Bounds;
 import com.kai.vinblood.util.ID;
 
@@ -19,7 +21,7 @@ public class Goblin extends Enemy {
     @Override
     protected void attack() {
         super.attack();
-        if (id.idnum == 0001) {
+        if (id.idnum == 1) {
             shootProjectileAtPlayer(new ID(0));
         }
     }

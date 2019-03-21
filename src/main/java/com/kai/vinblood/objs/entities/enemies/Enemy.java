@@ -19,7 +19,7 @@ public class Enemy extends Entity {
     public ID id;
 
     //Used when parsing the XML as a model Enemy
-    Enemy(BufferedImage image) {
+    public Enemy(BufferedImage image) {
         super(null, image);
         projectiles = new HashMap<>();
         active = false;
@@ -51,21 +51,9 @@ public class Enemy extends Entity {
         attackTick = 10000;
     }
 
-    @Override
-    public void draw(Graphics g) {
-        super.draw(g);
-        g.setColor(Color.RED);
-        g.fillRect(getBounds().scaledX(), getBounds().scaledY() - Bounds.scaledHeightNumber(10),
-                ((int)(getStat("health").getValue() / (double)(getStat("max health").getValue()))) * getBounds().scaledWidth(), Bounds.scaledHeightNumber(5));
-    }
-
     private void statInit() {
         statManager.addStat("damage", "Base damage dealt by an enemy.", 10);
         statManager.addStat("rate of attack", "Frequency at which projectiles are fired/damage is dealt.", 1);
-    }
-
-    public Map<ID, Projectile> getProjectiles() {
-        return projectiles;
     }
 
     @Override
@@ -91,8 +79,16 @@ public class Enemy extends Entity {
     }
 
 
-    public int getDamage() {
-        return (int)(getStat("damage").getValue() * (1.00 + (getStat("bloodthirst").getValue() * 2)));
+    @Override
+    public void draw(Graphics g) {
+        super.draw(g);
+        g.setColor(Color.RED);
+        g.fillRect(getBounds().scaledX(), getBounds().scaledY() - Bounds.scaledHeightNumber(10),
+                (int)(((getStat("health").getValue() / (double)(getStat("max health").getValue()))) * getBounds().scaledWidth()), Bounds.scaledHeightNumber(5));
+    }
+
+    public Map<ID, Projectile> getProjectiles() {
+        return projectiles;
     }
 
     @Override

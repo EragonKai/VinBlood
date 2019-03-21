@@ -1,7 +1,8 @@
-package com.kai.vinblood.objs.entities.enemies;
+package com.kai.vinblood.objs.entities.enemies.load;
 
 import com.kai.vinblood.core.ResourceManager;
 import com.kai.vinblood.objs.entities.Projectile;
+import com.kai.vinblood.objs.entities.enemies.Enemy;
 import com.kai.vinblood.util.Bounds;
 import com.kai.vinblood.util.ID;
 import org.w3c.dom.Document;
@@ -63,24 +64,7 @@ public class EnemyLoader {
                 for (int prj = 0; prj < projlist.getLength(); prj++) {
                     Element projNode = (Element) projlist.item(prj);
 
-                    BufferedImage projImage = ResourceManager.getImage("projectiles", Integer.valueOf(projNode.getAttribute("imagex")), Integer.valueOf(projNode.getAttribute("imagey")), 8, 8);
-                    projImage = ResourceManager.toBufferedImage(projImage.getScaledInstance(Integer.valueOf(projNode.getAttribute("width")), Integer.valueOf(projNode.getAttribute("height")), Image.SCALE_FAST));
-                    Projectile p = new Projectile(projImage);
-                    if (projNode.hasAttribute("variance")) {
-                        p.setVariance(Integer.valueOf(projNode.getAttribute("variance")));
-                    }
-                    if (projNode.hasAttribute("speed")) {
-                        p.setSpeed(Integer.valueOf(projNode.getAttribute("speed")));
-                    }
-                    if (projNode.hasAttribute("damage")) {
-                        p.setDamage(Integer.valueOf(projNode.getAttribute("damage")));
-                    }
-                    if (projNode.hasAttribute("range")) {
-                        p.setRange(Integer.valueOf(projNode.getAttribute("range")));
-                    }
-
-                    p.setBounds(new Bounds(0, 0, Integer.valueOf(projNode.getAttribute("width")), Integer.valueOf(projNode.getAttribute("height"))));
-
+                    Projectile p = getProjectile(projNode);
                     ID projID = new ID(Integer.valueOf(projNode.getAttribute("id")));
 
                     enemy.getProjectiles().put(projID, p);
@@ -96,6 +80,27 @@ public class EnemyLoader {
     }
 
 
+    public static Projectile getProjectile(Element projNode) {
+        BufferedImage projImage = ResourceManager.getImage("projectiles", Integer.valueOf(projNode.getAttribute("imagex")), Integer.valueOf(projNode.getAttribute("imagey")), 8, 8);
+        projImage = ResourceManager.toBufferedImage(projImage.getScaledInstance(Integer.valueOf(projNode.getAttribute("width")), Integer.valueOf(projNode.getAttribute("height")), Image.SCALE_FAST));
+        Projectile p = new Projectile(projImage);
+        if (projNode.hasAttribute("variance")) {
+            p.setVariance(Integer.valueOf(projNode.getAttribute("variance")));
+        }
+        if (projNode.hasAttribute("speed")) {
+            p.setSpeed(Integer.valueOf(projNode.getAttribute("speed")));
+        }
+        if (projNode.hasAttribute("damage")) {
+            p.setDamage(Integer.valueOf(projNode.getAttribute("damage")));
+        }
+        if (projNode.hasAttribute("range")) {
+            p.setRange(Integer.valueOf(projNode.getAttribute("range")));
+        }
+
+        p.setBounds(new Bounds(0, 0, Integer.valueOf(projNode.getAttribute("width")), Integer.valueOf(projNode.getAttribute("height"))));
+
+        return p;
+    }
 
     public static Enemy getEnemy(ID id) {
         return enemies.get(id);

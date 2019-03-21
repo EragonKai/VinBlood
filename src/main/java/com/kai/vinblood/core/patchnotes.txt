@@ -12,3 +12,10 @@
     - "death" for game objects
     - projectiles
     - username prompt (fake client connection for now)
+
+3/20/19
+    - item behavior interfaces
+    - items: rune, rust, weapon
+    - xml loading for items
+    - fixed travel distance for projectiles
+    -

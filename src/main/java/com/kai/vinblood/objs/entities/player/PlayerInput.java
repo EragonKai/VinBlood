@@ -51,6 +51,10 @@ public class PlayerInput implements Updatable {
         return ResourceManager.toBufferedImage(img.getScaledInstance(owner.getBounds().scaledWidth(), owner.getBounds().scaledHeight(), Image.SCALE_FAST));
     }
 
+    public void mouseClicked(int x, int y) {
+        owner.shoot(x, y);
+    }
+
     public void keyPressed(char keychar) {
         switch(keychar) {
             case 'w':

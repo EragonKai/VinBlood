@@ -17,8 +17,9 @@ public abstract class Entity extends GameObject {
         statManager.addStat("defense", "Reduces the amount of damage taken.", 0);
         statManager.addStat("bloodthirst", "Increases the amount of damage dealt.", 0);
         statManager.addStat("health", "The amount of life you have.", 100);
-        statManager.addStat("max health", "The maximum amount of life you can have", 100);
+        statManager.addStat("max health", "The maximum amount of life you can have.", 100);
         statManager.addStat("mana", "The resource used to cast abilities.", 100);
+        statManager.addStat("max mana", " The maximum amount of mana you can have.", 100);
     }
 
     public StatManager.Stat getStat(String name) {
@@ -33,9 +34,12 @@ public abstract class Entity extends GameObject {
     @Override
     public void update() {
         if (statManager.getStat("health").getValue() <= 0) {
-            System.out.println("im ded");
             die();
         }
+    }
+
+    public int getDamage() {
+        return (int)(getStat("damage").getValue() * (1.00 + (getStat("bloodthirst").getValue() * 2)));
     }
 
     public void takeDamage(int amount) {

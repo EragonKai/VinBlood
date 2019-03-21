@@ -32,4 +32,12 @@ public class ID {
     public int hashCode() {
         return Objects.hash(idnum);
     }
+
+    @Override
+    public String toString() {
+        return "ID{" +
+                "idnum=" + idnum +
+                ", idname='" + idname + '\'' +
+                '}';
+    }
 }

@@ -13,19 +13,18 @@ public class ObjectController implements Updatable {
         return instance;
     }
 
-
     private List<GameObject> gameObjects;
     private List<GameObject> toAdd;
+    private Iterator<GameObject> iterator;
 
     private ObjectController() {
         gameObjects = new ArrayList<>();
         toAdd = new ArrayList<>();
     }
 
-
     @Override
     public void update() {
-        for (Iterator<GameObject> iterator = gameObjects.iterator(); iterator.hasNext(); ) {
+        for (iterator = gameObjects.iterator(); iterator.hasNext(); ) {
             GameObject object = iterator.next();
             object.update();
 
@@ -44,6 +43,7 @@ public class ObjectController implements Updatable {
     }
 
     public List<GameObject> getGameObjects() {
-        return gameObjects;
+        return new ArrayList<>(gameObjects);
     }
+
 }

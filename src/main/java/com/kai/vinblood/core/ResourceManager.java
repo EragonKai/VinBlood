@@ -23,7 +23,10 @@ public class ResourceManager {
 
     static {
         load("rusts");
+        load("runes");
+        load("weapons");
         load("projectiles");
+        load("itemtooltip");
 
         File dir = new File("src/main/resources/images/0x72sprites/");
         File[] listOfFiles = dir.listFiles();

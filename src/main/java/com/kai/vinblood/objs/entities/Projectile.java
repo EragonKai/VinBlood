@@ -3,14 +3,18 @@ package com.kai.vinblood.objs.entities;
 import com.kai.vinblood.core.Game;
 import com.kai.vinblood.display.Display;
 import com.kai.vinblood.objs.GameObject;
+import com.kai.vinblood.objs.ObjectController;
+import com.kai.vinblood.objs.entities.enemies.Enemy;
 import com.kai.vinblood.util.Bounds;
 
 import java.awt.image.BufferedImage;
 
+//TODO: These ain't resizing correctly.
+
 public class Projectile extends GameObject {
     private int speed = 25;
     //Basically accuracy
-    private int variance = 5;
+    private int variance = 30;
     private int damage = 5;
     private int range = 25;
     private int targetX, targetY;
@@ -83,7 +87,7 @@ public class Projectile extends GameObject {
 
         double xChange = Math.abs(Entity.speedStatConversion(speed) * Math.cos(direction));
         double yChange = Math.abs(Entity.speedStatConversion(speed) * Math.sin(direction));
-        distanceTraveled = distanceTraveled + xChange + yChange;
+        distanceTraveled = distanceTraveled + Math.sqrt(xChange*xChange + yChange*yChange);
 
         setX((int) (getX() + (Entity.speedStatConversion(speed) * Math.cos(direction))));
         setY((int) (getY() + (Entity.speedStatConversion(speed) * Math.sin(direction))));
@@ -92,6 +96,16 @@ public class Projectile extends GameObject {
             if (checkCollision(Game.getPlayer())) {
                 Game.getPlayer().takeDamage(damage);
                 die();
+            }
+        } else {
+            for (GameObject o: ObjectController.getInstance().getGameObjects()) {
+                if (o instanceof Enemy) {
+                    if (checkCollision(o)) {
+                        ((Entity)o).takeDamage(Game.getPlayer().getDamage());
+                        die();
+                        break;
+                    }
+                }
             }
         }
 
@@ -130,6 +144,10 @@ public class Projectile extends GameObject {
 
     public int getDamage() {
         return damage;
+    }
+
+    public void setOwnedByPlayer(boolean ownedByPlayer) {
+        this.ownedByPlayer = ownedByPlayer;
     }
 
     @Override

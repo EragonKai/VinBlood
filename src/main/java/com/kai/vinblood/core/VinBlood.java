@@ -1,7 +1,8 @@
 package com.kai.vinblood.core;
 
 import com.kai.vinblood.display.Display;
-import com.kai.vinblood.objs.entities.enemies.EnemyLoader;
+import com.kai.vinblood.objs.entities.enemies.load.EnemyLoader;
+import com.kai.vinblood.objs.items.ItemLoader;
 import org.xml.sax.SAXException;
 
 import javax.swing.*;
@@ -26,6 +27,7 @@ public class VinBlood {
 
             try {
                 EnemyLoader.loadXMLS();
+                ItemLoader.loadXMLS();
             } catch (ParserConfigurationException | IOException | SAXException e) { e.printStackTrace(); }
 
             new Game(playerName);

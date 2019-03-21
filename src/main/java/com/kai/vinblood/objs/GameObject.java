@@ -11,6 +11,7 @@ public abstract class GameObject implements Updatable {
     private Bounds bounds;
 
     private boolean visible = true;
+    private boolean physical = true;
     private BufferedImage image;
 
     private boolean markedForRemoval = false;
@@ -29,6 +30,10 @@ public abstract class GameObject implements Updatable {
                 (otherObject.getX()+otherObject.getWidth() > getX()) &&
                 (otherObject.getY() < getY()+getHeight()) &&
                 (otherObject.getY()+otherObject.getHeight() > getY()));
+    }
+
+    public boolean checkCollision(int otherX, int otherY) {
+        return (otherX > getX() && otherX < getX() + getWidth() && otherY > getY() && otherY < getY() + getHeight());
     }
 
     public double distanceTo (int tX, int tY) {
@@ -70,6 +75,14 @@ public abstract class GameObject implements Updatable {
     }
     public void setVisible(boolean visible) {
         this.visible = visible;
+    }
+
+    public boolean isPhysical() {
+        return physical;
+    }
+
+    public void setPhysical(boolean physical) {
+        this.physical = physical;
     }
 
     public void die() {

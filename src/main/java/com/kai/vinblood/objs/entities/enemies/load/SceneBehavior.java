@@ -1,6 +1,7 @@
-package com.kai.vinblood.objs.entities.enemies;
+package com.kai.vinblood.objs.entities.enemies.load;
 
 import com.kai.vinblood.objs.GameObject;
+import com.kai.vinblood.objs.entities.enemies.Enemy;
 import com.kai.vinblood.objs.entities.player.Player;
 
 import java.util.List;

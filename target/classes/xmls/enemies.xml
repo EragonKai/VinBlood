@@ -13,19 +13,19 @@ Stats:
 
 <enemies>
     <Enemy id="0000" name="Goblin" image="goblin_idle_anim_f0" width="20" height="20">
-        <stat id="max health">40</stat>
+        <stat id="max health">20</stat>
         <stat id="swiftness">30</stat>
         <stat id="rate of attack">4</stat>
         <stat id="damage">1</stat>
         <!--<drop id="EXAMPLE_ITEM_DROP 6969" rate="0.01"/>-->
     </Enemy>
     <Enemy id="0001" name="Goblin" image="goblin_idle_anim_f0" width="20" height="20">
-        <stat id="max health">35</stat>
+        <stat id="max health">15</stat>
         <stat id="swiftness">25</stat>
         <stat id="rate of attack">3</stat>
         <stat id="damage">0</stat>
 
-        <projectile id="0" imagex="0" imagey="0" width="8" height="8" speed="45" variance="15" damage = "3"/>
+        <projectile id="0" imagex="0" imagey="0" width="8" height="8" speed="45" variance="15" damage="3"/>
     </Enemy>
 
 </enemies>

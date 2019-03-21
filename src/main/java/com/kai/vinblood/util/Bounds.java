@@ -17,6 +17,13 @@ public class Bounds {
         this.height = height;
     }
 
+    public Bounds(Bounds bounds) {
+        this.x = bounds.x;
+        this.y = bounds.y;
+        this.width = bounds.width;
+        this.height = bounds.height;
+    }
+
     public int scaledWidth() {
         return scaledWidthNumber(width);
     }

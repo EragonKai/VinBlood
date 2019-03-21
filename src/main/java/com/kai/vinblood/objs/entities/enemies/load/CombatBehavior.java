@@ -1,6 +1,7 @@
-package com.kai.vinblood.objs.entities.enemies;
+package com.kai.vinblood.objs.entities.enemies.load;
 
 import com.kai.vinblood.objs.entities.Entity;
+import com.kai.vinblood.objs.entities.enemies.Enemy;
 
 public enum CombatBehavior {
     STRAIGHT_CHASE {
