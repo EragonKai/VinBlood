@@ -14,6 +14,7 @@ import java.util.Map;
 
 public class Enemy extends Entity {
     private Map<ID, Projectile> projectiles;
+    private Map<ID, Double> drops;
     private boolean active = true;
     int attackTick;
     public ID id;
@@ -22,6 +23,7 @@ public class Enemy extends Entity {
     public Enemy(BufferedImage image) {
         super(null, image);
         projectiles = new HashMap<>();
+        drops = new HashMap<>();
         active = false;
 
         statInit();
@@ -48,6 +50,7 @@ public class Enemy extends Entity {
         this.id = e.id;
 
         projectiles = new HashMap<>(e.getProjectiles());
+        drops = new HashMap<>(e.getDrops());
         attackTick = 10000;
     }
 
@@ -89,6 +92,10 @@ public class Enemy extends Entity {
 
     public Map<ID, Projectile> getProjectiles() {
         return projectiles;
+    }
+
+    public Map<ID, Double> getDrops() {
+        return drops;
     }
 
     @Override

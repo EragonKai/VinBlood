@@ -28,6 +28,24 @@ import java.util.Map;
 public class ItemLoader {
     private ItemLoader() {}
 
+    /*
+    Item types:
+        weapon
+        rune
+        rust
+
+    Weapon stats:
+        damage
+        rate of attack
+
+    player stats:
+        swiftness
+        defense
+        bloodthirst
+        max health
+        mana
+     */
+
     private static Map<ID, Item> items = new HashMap<>();
 
     public static void loadXMLS() throws ParserConfigurationException, IOException, SAXException {
@@ -70,6 +88,10 @@ public class ItemLoader {
                             } else {
                                 owner.statManager.removeDecStat(stat, intAmount);
                             }
+                        }
+
+                        public String getDescription() {
+                            return ((intAmount > 0) ? "+" : "") + intAmount + " " + stat;
                         }
                     });
                 } else {

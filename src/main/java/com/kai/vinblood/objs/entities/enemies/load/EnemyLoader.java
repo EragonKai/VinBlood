@@ -24,6 +24,17 @@ import java.util.Map;
 public class EnemyLoader {
     private EnemyLoader() {}
 
+    /*
+    Stats:
+        max health
+        mana
+        swiftness
+        bloodthirst
+        defense
+        damage
+        rate of attack
+     */
+
     private static Map<ID, Enemy> enemies = new HashMap<>();
 
     public static void loadXMLS() throws ParserConfigurationException, IOException, SAXException {
@@ -68,6 +79,15 @@ public class EnemyLoader {
                     ID projID = new ID(Integer.valueOf(projNode.getAttribute("id")));
 
                     enemy.getProjectiles().put(projID, p);
+                }
+
+                NodeList dropList = e.getElementsByTagName("drop");
+                for (int di = 0; di < dropList.getLength(); di++) {
+                    Element dropElement = (Element) dropList.item(di);
+
+                    ID itemID = new ID(Integer.valueOf(dropElement.getAttribute("id")), dropElement.getAttribute("name"));
+                    double frequency = Double.valueOf(dropElement.getAttribute("rate"));
+                    enemy.getDrops().put(itemID, frequency);
                 }
 
                 enemy.id = new ID(id.idnum, id.idname);

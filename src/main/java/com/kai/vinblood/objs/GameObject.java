@@ -12,6 +12,7 @@ public abstract class GameObject implements Updatable {
 
     private boolean visible = true;
     private boolean physical = true;
+    private int displayLayer = 1;
     private BufferedImage image;
 
     private boolean markedForRemoval = false;
@@ -32,8 +33,8 @@ public abstract class GameObject implements Updatable {
                 (otherObject.getY()+otherObject.getHeight() > getY()));
     }
 
-    public boolean checkCollision(int otherX, int otherY) {
-        return (otherX > getX() && otherX < getX() + getWidth() && otherY > getY() && otherY < getY() + getHeight());
+    public boolean checkCollisionWithMouse(int otherX, int otherY) {
+        return (otherX > getBounds().scaledX() && otherX < getBounds().scaledX() + getBounds().scaledHeight() && otherY > getBounds().scaledY() && otherY < getBounds().scaledY() + getBounds().scaledHeight());
     }
 
     public double distanceTo (int tX, int tY) {
@@ -65,31 +66,14 @@ public abstract class GameObject implements Updatable {
     public void setImage(BufferedImage image) { this.image = image; }
     public BufferedImage getImage() { return image; }
     public Bounds getBounds() { return bounds; }
+    public void setBounds(Bounds bounds) { this.bounds = bounds; }
+    public boolean isVisible() { return visible; }
+    public void setVisible(boolean visible) { this.visible = visible; }
+    public boolean isPhysical() { return physical; }
+    public void setPhysical(boolean physical) { this.physical = physical; }
+    public void die() { markedForRemoval = true; }
+    public boolean isMarkedForRemoval() { return markedForRemoval; }
+    public void setDisplayLayer(int displayLayer) { this.displayLayer = displayLayer; }
+    public int getDisplayLayer() { return displayLayer; }
 
-    public void setBounds(Bounds bounds) {
-        this.bounds = bounds;
-    }
-
-    public boolean isVisible() {
-        return visible;
-    }
-    public void setVisible(boolean visible) {
-        this.visible = visible;
-    }
-
-    public boolean isPhysical() {
-        return physical;
-    }
-
-    public void setPhysical(boolean physical) {
-        this.physical = physical;
-    }
-
-    public void die() {
-        markedForRemoval = true;
-    }
-
-    public boolean isMarkedForRemoval() {
-        return markedForRemoval;
-    }
 }

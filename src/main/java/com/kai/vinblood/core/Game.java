@@ -1,6 +1,7 @@
 package com.kai.vinblood.core;
 
 import com.kai.vinblood.display.Display;
+import com.kai.vinblood.display.PlayerInfoDisplay;
 import com.kai.vinblood.net.ClientConnection;
 import com.kai.vinblood.objs.ObjectController;
 import com.kai.vinblood.objs.entities.enemies.Goblin;
@@ -26,6 +27,8 @@ public class Game implements Updatable {
 
     public void transitionToScene(GameState newState) {
         player = null;
+        ObjectController.getInstance().getGameObjects().clear();
+
         switch(newState) {
             case MENU:
 
@@ -35,6 +38,9 @@ public class Game implements Updatable {
                 break;
             case RUNNING:
                 player = new ClientConnection().getPlayer(playerName);
+                new PlayerInfoDisplay();
+
+                //Temporary:
                 player.getBounds().x = 550;
                 player.getBounds().y = 550;
 

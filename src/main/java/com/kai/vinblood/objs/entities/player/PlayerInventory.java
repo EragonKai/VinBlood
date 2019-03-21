@@ -20,8 +20,8 @@ public class PlayerInventory implements Updatable {
 
     private List<Item> spareInventory;
 
-    private static final Bounds EQUIP_WEP_BOUNDS = new Bounds(20, 640, 32, 32);
-    private static final Bounds EQUIP_RUNE_BOUNDS = new Bounds(60, 640, 32, 32);
+    private static final Bounds EQUIP_WEP_BOUNDS = new Bounds(62, 602, 32, 32);
+    private static final Bounds EQUIP_RUNE_BOUNDS = new Bounds(98, 602, 32, 32);
     private static final Bounds INVIS_BOUNDS = new Bounds(-500, -500, 32, 32);
 
     public PlayerInventory(Player owner) {

@@ -8,4 +8,5 @@ import com.kai.vinblood.objs.entities.Entity;
 public interface ItemBehavior {
     void onEquip(Entity owner);
     void onUnEquip(Entity owner);
+    String getDescription();
 }

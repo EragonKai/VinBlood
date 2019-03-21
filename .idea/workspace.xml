@@ -2,66 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b191f0b9-7d6a-497a-9bd0-f5364fd1a83e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/mbp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/Clickable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/HUDController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/Hoverable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/PlayerInventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/skills/Skill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ActiveItemBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Rune.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Rust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/TargetedItemBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Weapon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/PlayerInfoDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/VFont.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VinBlood.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/ResourceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/ResourceManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/VinBlood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/VinBlood.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/patchnotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/patchnotes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/HUDComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/HUDComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/GameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/ObjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/ObjectController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/Projectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/Projectile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/CombatBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/load/CombatBehavior.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/EnemyLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/load/EnemyLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/Goblin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/Goblin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/SceneBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/load/SceneBehavior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/PlayerInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/PlayerInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/Bounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/Bounds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/ID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/projectiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/projectiles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/load/EnemyLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/load/EnemyLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/PlayerInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/PlayerInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/skills/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/skills/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/Globals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/Globals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/itemtooltip.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/itemtooltip.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/weapons.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/weapons.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/xmls/enemies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xmls/enemies.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/xmls/items.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xmls/items.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/Input$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/Input$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/Game$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/Game$GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/Game$GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/ResourceManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/ResourceManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/VinBlood.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/core/VinBlood.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/display/Display$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/display/Display$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/display/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/display/Display.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/display/HUDComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/display/HUDComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/display/HUDComponent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/GameObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/ObjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/ObjectController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/Entity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/Projectile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/Projectile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/enemies/CombatBehavior$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/enemies/CombatBehavior.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/enemies/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/enemies/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/enemies/EnemyLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/enemies/Goblin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/enemies/Goblin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/enemies/SceneBehavior$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/enemies/SceneBehavior.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/player/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/player/PlayerInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/player/PlayerInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/util/Bounds.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/util/Bounds.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/util/ID.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/util/ID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/projectiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/projectiles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/enemies/load/EnemyLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/enemies/load/EnemyLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/player/PlayerInventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/player/PlayerInventory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/player/skills/Skill.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/entities/player/skills/Skill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/items/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/items/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/items/ItemBehavior.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/items/ItemBehavior.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/items/ItemLoader$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/items/ItemLoader$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/items/ItemLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/items/ItemLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/items/Weapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/objs/items/Weapon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kai/vinblood/util/Globals.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kai/vinblood/util/Globals.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/itemtooltip.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/itemtooltip.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/weapons.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/images/weapons.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/xmls/enemies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xmls/enemies.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/xmls/items.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xmls/items.xml" afterDir="false" />
     </list>
@@ -79,43 +64,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemLoader.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/PlayerInfoDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="55" column="46" lean-forward="true" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5794#5795#0" expanded="true" />
-                <element signature="e#5880#5881#0" expanded="true" />
-                <element signature="e#5901#5902#0" expanded="true" />
-                <element signature="e#5971#5972#0" expanded="true" />
-                <element signature="e#5999#6000#0" expanded="true" />
-                <element signature="e#6058#6059#0" expanded="true" />
-                <element signature="e#6082#6083#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#604#605#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/Input.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="109" column="25" lean-forward="true" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
+            <state relative-caret-position="84">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,62 +76,72 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/PlayerInventory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="72" column="33" lean-forward="true" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+            <state relative-caret-position="322">
+              <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2113#2114#0" expanded="true" />
-                <element signature="e#2148#2149#0" expanded="true" />
-                <element signature="e#2194#2195#0" expanded="true" />
-                <element signature="e#2231#2232#0" expanded="true" />
-                <element signature="e#2268#2269#0" expanded="true" />
-                <element signature="e#2303#2304#0" expanded="true" />
-                <element signature="e#2347#2348#0" expanded="true" />
-                <element signature="e#2383#2384#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/HUDController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#580#581#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#665#666#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
+                <element signature="e#1366#1367#0" expanded="true" />
+                <element signature="e#1427#1428#0" expanded="true" />
+                <element signature="e#5242#5243#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Item.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/patchnotes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="119">
+              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/Display.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="56" column="28" lean-forward="true" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2500#2501#0" expanded="true" />
-                <element signature="e#2534#2535#0" expanded="true" />
-                <element signature="e#2239#2240#0" expanded="true" />
-                <element signature="e#2274#2275#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/ObjectController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Weapon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="-34">
+              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1900#1901#0" expanded="true" />
+                <element signature="e#1934#1935#0" expanded="true" />
+                <element signature="e#1975#1976#0" expanded="true" />
+                <element signature="e#2011#2012#0" expanded="true" />
+                <element signature="e#2067#2068#0" expanded="true" />
+                <element signature="e#2115#2116#0" expanded="true" />
+                <element signature="e#2145#2146#0" expanded="true" />
+                <element signature="e#2174#2175#0" expanded="true" />
+                <element signature="e#2213#2214#0" expanded="true" />
+                <element signature="e#2248#2249#0" expanded="true" />
+                <element signature="e#2288#2289#0" expanded="true" />
+                <element signature="e#2328#2329#0" expanded="true" />
+                <element signature="e#2390#2391#0" expanded="true" />
+                <element signature="e#2448#2449#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,11 +152,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/GameObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="34" selection-start-line="34" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="56">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/HUDController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/xmls/items.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -206,12 +189,15 @@
       <list>
         <option value="Text File" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>checkColl</find>
+    </findStrings>
     <dirStrings>
       <dir>C:\Users\eragon\Documents\JavaPrograms\VinBlood\src\main\resources\0x72sprites</dir>
     </dirStrings>
@@ -226,11 +212,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vblood/display/Display.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vblood/core/VinBlood.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/kai/vinblood/core/SampleTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/Globals.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/Updatable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/Location.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/net/ClientConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/HUDComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/CombatBehaviors.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/Action.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/EnemyBehavior.java" />
@@ -240,37 +224,41 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/CombatBehavior.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/VinBlood.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemBehavior.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ActiveItemBehavior.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/TargetedItemBehavior.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/load/EnemyLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/skills/Skill.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/ID.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/Goblin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/patchnotes.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Rust.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Rune.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/Bounds.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/PlayerInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/PlayerInventory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/Entity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/Enemy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/Projectile.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/xmls/enemies.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Weapon.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/xmls/items.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/Display.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/GameObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/Clickable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/Hoverable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/HUDController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/Input.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/xmls/enemies.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/Enemy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/load/EnemyLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/ResourceManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/HUDComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/ObjectController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/PlayerInventory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/Globals.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/VFont.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemBehavior.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/Display.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/skills/Skill.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/xmls/items.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/PlayerInfoDisplay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/Entity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/GameObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Item.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/patchnotes.txt" />
       </list>
     </option>
   </component>
@@ -292,16 +280,18 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="752" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="152" />
+    <option name="y" value="30" />
+    <option name="width" value="2165" />
+    <option name="height" value="1355" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -360,6 +350,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vinblood" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VinBlood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VinBlood" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vinblood" type="462c0819:PsiDirectoryNode" />
               <item name="objs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -392,7 +391,31 @@
               <item name="vinblood" type="462c0819:PsiDirectoryNode" />
               <item name="objs" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="enemies" type="462c0819:PsiDirectoryNode" />
+              <item name="load" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VinBlood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VinBlood" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vinblood" type="462c0819:PsiDirectoryNode" />
+              <item name="objs" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
               <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VinBlood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VinBlood" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vinblood" type="462c0819:PsiDirectoryNode" />
+              <item name="objs" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="skills" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VinBlood" type="b2602c69:ProjectViewProjectNode" />
@@ -436,18 +459,22 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="xmls" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="VinBlood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VinBlood" type="462c0819:PsiDirectoryNode" />
+              <item name="VinBloodServer" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553130260354" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553151490395" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -516,13 +543,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46563000" />
+    <option name="totallyTimeSpent" value="55291000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="752" extended-state="6" />
-    <editor active="true" />
+    <frame x="152" y="30" width="2165" height="1355" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29725364" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20142518" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -531,7 +557,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32951757" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16666667" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.14075287" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -541,7 +567,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3287879" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32815057" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -552,37 +578,6 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29725364" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32951757" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16666667" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3287879" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.3296912" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -606,18 +601,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/VinBloodServer/src/com/kai/vinblood.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/HUDComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#679#956#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/images/player.png" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/awt/Component.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/JComponent.java" />
@@ -636,13 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/Globals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -677,20 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemBehavior.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/skills/Skill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/ID.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
@@ -702,35 +664,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/VinBlood.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/images/weapons.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/Goblin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/patchnotes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Rust.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -751,13 +686,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/load/EnemyLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -792,33 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="55" column="46" lean-forward="true" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5794#5795#0" expanded="true" />
-            <element signature="e#5880#5881#0" expanded="true" />
-            <element signature="e#5901#5902#0" expanded="true" />
-            <element signature="e#5971#5972#0" expanded="true" />
-            <element signature="e#5999#6000#0" expanded="true" />
-            <element signature="e#6058#6059#0" expanded="true" />
-            <element signature="e#6082#6083#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/PlayerInput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -833,81 +734,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/Projectile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="method#updateTarget#0;class#Projectile#0" />
-            <element signature="method#getCloseNumber#0;class#Projectile#0" />
-            <element signature="e#3839#3840#0" expanded="true" />
-            <element signature="e#3924#3925#0" expanded="true" />
-            <element signature="e#4001#4002#0" expanded="true" />
-            <element signature="e#4058#4059#0" expanded="true" />
-            <element signature="e#4131#4132#0" expanded="true" />
-            <element signature="e#4188#4189#0" expanded="true" />
-            <element signature="e#4251#4252#0" expanded="true" />
-            <element signature="e#4310#4311#0" expanded="true" />
-            <element signature="e#4419#4420#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/Enemy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="71" column="47" lean-forward="true" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xmls/items.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="28" column="71" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xmls/enemies.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="48" column="50" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Weapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1934#1935#0" expanded="true" />
-            <element signature="e#2011#2012#0" expanded="true" />
-            <element signature="e#2115#2116#0" expanded="true" />
-            <element signature="e#2174#2175#0" expanded="true" />
-            <element signature="e#2248#2249#0" expanded="true" />
-            <element signature="e#2328#2329#0" expanded="true" />
-            <element signature="e#2448#2449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="34" selection-start-line="34" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="544">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -921,79 +749,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/Hoverable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/Enemy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="697">
+          <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3019#3020#0" expanded="true" />
+            <element signature="e#3053#3054#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/HUDController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/load/EnemyLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        <state relative-caret-position="478">
+          <caret line="84" column="34" lean-forward="true" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#5284#5285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xmls/enemies.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="36" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/enemies/Goblin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/ResourceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/PlayerInventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="72" column="33" lean-forward="true" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2113#2114#0" expanded="true" />
-            <element signature="e#2148#2149#0" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
-            <element signature="e#2231#2232#0" expanded="true" />
-            <element signature="e#2268#2269#0" expanded="true" />
-            <element signature="e#2303#2304#0" expanded="true" />
-            <element signature="e#2347#2348#0" expanded="true" />
-            <element signature="e#2383#2384#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/ResourceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/ObjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/Input.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="109" column="25" lean-forward="true" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
+        <state relative-caret-position="272">
+          <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1002,27 +808,224 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/HUDComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/ObjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1399#1400#0" expanded="true" />
+            <element signature="e#1498#1499#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/VFont.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/util/Globals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/PlayerInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="93" column="62" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3473#3474#0" expanded="true" />
+            <element signature="e#3589#3590#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/ItemBehavior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/player/skills/Skill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/VinBlood.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xmls/items.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/Hoverable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/HUDController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/GameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/entities/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Weapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1900#1901#0" expanded="true" />
+            <element signature="e#1934#1935#0" expanded="true" />
+            <element signature="e#1975#1976#0" expanded="true" />
+            <element signature="e#2011#2012#0" expanded="true" />
+            <element signature="e#2067#2068#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2145#2146#0" expanded="true" />
+            <element signature="e#2174#2175#0" expanded="true" />
+            <element signature="e#2213#2214#0" expanded="true" />
+            <element signature="e#2248#2249#0" expanded="true" />
+            <element signature="e#2288#2289#0" expanded="true" />
+            <element signature="e#2328#2329#0" expanded="true" />
+            <element signature="e#2390#2391#0" expanded="true" />
+            <element signature="e#2448#2449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/PlayerInfoDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/Input.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1552">
+          <caret line="109" column="25" lean-forward="true" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/display/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="56" column="28" lean-forward="true" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/objs/items/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        <state relative-caret-position="322">
+          <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2500#2501#0" expanded="true" />
-            <element signature="e#2534#2535#0" expanded="true" />
-            <element signature="e#2239#2240#0" expanded="true" />
-            <element signature="e#2274#2275#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#1427#1428#0" expanded="true" />
+            <element signature="e#5242#5243#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kai/vinblood/core/patchnotes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
         </state>
       </provider>
     </entry>

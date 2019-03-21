@@ -1,37 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--
-    Item types:
-        weapon
-        rune
-        rust
-
-    Weapon stats:
-        damage
-        rate of attack
-
-    player stats:
-        swiftness
-        defense
-        bloodthirst
-        max health
-        mana
--->
 <items>
     <Item id="0000" name="Basic Weapon" type="weapon" imagex="0" imagey="0">
         <stat id="damage">5</stat>
         <stat id="rate of attack">5</stat>
         <stat id="swiftness">5</stat>
-
-<!--
-        <keyword id="piercing"/>
--->
+        <!--<keyword id="piercing"/>-->
         <projectile id="0" imagex="8" imagey="0" width="8" height="8" speed="30" variance="50"/>
     </Item>
+
     <Item id="0001" name="Basic Rune" type="rune" imagex="0" imagey="0">
         <skill id="teleport"/>
         <stat id="bloodthirst">20</stat>
     </Item>
+
     <Item id="0002" name="Basic Rust" type="rust" imagex="0" imagey="0">
         <stat id="max health">5</stat>
     </Item>

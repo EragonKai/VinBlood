@@ -27,6 +27,7 @@ public class ResourceManager {
         load("weapons");
         load("projectiles");
         load("itemtooltip");
+        load("playerinfodisplay");
 
         File dir = new File("src/main/resources/images/0x72sprites/");
         File[] listOfFiles = dir.listFiles();

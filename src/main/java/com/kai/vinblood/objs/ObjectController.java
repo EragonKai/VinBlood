@@ -1,6 +1,7 @@
 package com.kai.vinblood.objs;
 
 import com.kai.vinblood.core.Updatable;
+import com.kai.vinblood.display.Display;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -22,6 +23,7 @@ public class ObjectController implements Updatable {
         toAdd = new ArrayList<>();
     }
 
+    private boolean updateScreen = false;
     @Override
     public void update() {
         for (iterator = gameObjects.iterator(); iterator.hasNext(); ) {
@@ -30,11 +32,20 @@ public class ObjectController implements Updatable {
 
             if(object.isMarkedForRemoval()) {
                 iterator.remove();
+                updateScreen = true;
             }
         }
 
-        gameObjects.addAll(toAdd);
-        toAdd.clear();
+        if (toAdd.size() > 0) {
+            gameObjects.addAll(toAdd);
+            toAdd.clear();
+            updateScreen = true;
+        }
+
+        if (updateScreen) {
+            Display.getInstance().updateLayers();
+            updateScreen = false;
+        }
 
     }
 

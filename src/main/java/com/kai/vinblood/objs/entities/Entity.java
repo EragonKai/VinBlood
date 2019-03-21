@@ -28,7 +28,7 @@ public abstract class Entity extends GameObject {
 
     //Turns the speed stat into the pixel movement
     public static int speedStatConversion(int speed) {
-        return speed/5;
+        return (speed)/5;
     }
 
     @Override

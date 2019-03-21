@@ -18,4 +18,11 @@
     - items: rune, rust, weapon
     - xml loading for items
     - fixed travel distance for projectiles
-    -
+    - changed input to listen for mouse events
+    - shooting current weapon now works
+    - items are displayed on the hud
+    - created a layer system for drawing game objects
+    - health and mana is now displayed
+    - item tooltip now properly displays stats
+    - player stats now display
+    - player info display now sort of works when the screen is resized
