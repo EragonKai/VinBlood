@@ -16,6 +16,16 @@ public class Display extends JPanel implements Updatable {
     public static int DISPLAY_WIDTH = 1100, DISPLAY_HEIGHT = 700;
     private Input i;
 
+    public enum Layer{
+        ENTITY(1), HUD(2), ITEM(3);
+
+        private int layer;
+        Layer(int layer) {
+            this.layer = layer;
+        }
+        public int getLayer() { return layer; }
+    }
+
     private static Display instance;
     private Display() {
         setPreferredSize(new Dimension(DISPLAY_WIDTH, DISPLAY_HEIGHT));

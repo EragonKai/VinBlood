@@ -10,6 +10,7 @@ public abstract class HUDComponent extends GameObject {
     public HUDComponent(Bounds bounds, BufferedImage image) {
         super(bounds, image);
         setPhysical(false);
+        setDisplayLayer(Display.Layer.HUD.getLayer());
     }
 
 }

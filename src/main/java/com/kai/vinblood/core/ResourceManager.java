@@ -22,12 +22,15 @@ public class ResourceManager {
     private static Map<String, BufferedImage> images = new HashMap<>();
 
     static {
+        //TODO: Just loop through all the files in the dir instead of manually loading them.
         load("rusts");
         load("runes");
         load("weapons");
         load("projectiles");
         load("itemtooltip");
         load("playerinfodisplay");
+        load("button");
+        load("inventory");
 
         File dir = new File("src/main/resources/images/0x72sprites/");
         File[] listOfFiles = dir.listFiles();

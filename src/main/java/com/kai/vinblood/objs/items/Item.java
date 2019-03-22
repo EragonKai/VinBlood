@@ -39,7 +39,7 @@ public abstract class Item extends GameObject implements ItemBehavior, Hoverable
         resizeImage();
 
         HUDController.getInstance().addHoverable(this);
-        setDisplayLayer(3);
+        setDisplayLayer(Display.Layer.ITEM.getLayer());
     }
 
     @Override

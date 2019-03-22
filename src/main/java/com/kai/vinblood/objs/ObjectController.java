@@ -1,7 +1,10 @@
 package com.kai.vinblood.objs;
 
+import com.kai.vinblood.core.Game;
 import com.kai.vinblood.core.Updatable;
 import com.kai.vinblood.display.Display;
+import com.kai.vinblood.levels.LevelController;
+import com.kai.vinblood.objs.entities.enemies.Enemy;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -47,6 +50,21 @@ public class ObjectController implements Updatable {
             updateScreen = false;
         }
 
+        if (Game.state == Game.GameState.RUNNING) {
+            LevelController.getInstance().update();
+        }
+
+    }
+
+    public int getEnemyNumber() {
+        int amount = 0;
+        for (GameObject g: gameObjects) {
+            if (g instanceof Enemy) {
+                amount++;
+            }
+        }
+
+        return amount;
     }
 
     public void add(GameObject object) {

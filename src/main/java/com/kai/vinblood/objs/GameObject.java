@@ -34,7 +34,7 @@ public abstract class GameObject implements Updatable {
     }
 
     public boolean checkCollisionWithMouse(int otherX, int otherY) {
-        return (otherX > getBounds().scaledX() && otherX < getBounds().scaledX() + getBounds().scaledHeight() && otherY > getBounds().scaledY() && otherY < getBounds().scaledY() + getBounds().scaledHeight());
+        return (otherX > getBounds().scaledX() && otherX < getBounds().scaledX() + getBounds().scaledWidth() && otherY > getBounds().scaledY() && otherY < getBounds().scaledY() + getBounds().scaledHeight());
     }
 
     public double distanceTo (int tX, int tY) {

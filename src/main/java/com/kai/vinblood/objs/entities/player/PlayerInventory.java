@@ -32,6 +32,7 @@ public class PlayerInventory implements Updatable {
 
         equipWeapon(ItemLoader.getWeapon(new ID(0)));
         equipRune(ItemLoader.getRune(new ID(1)));
+        equipRust(ItemLoader.getRust(new ID(2)));
     }
 
     @Override

@@ -18,8 +18,12 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
+
+import com.kai.vinblood.objs.entities.enemies.*;
 
 public class EnemyLoader {
     private EnemyLoader() {}
@@ -126,6 +130,16 @@ public class EnemyLoader {
         return enemies.get(id);
     }
 
+    public static void createEnemy(ID id, Bounds bounds) {
+        String enemyType = "com.kai.vinblood.objs.entities.enemies." + id.idname;
+        try {
+            Class cl = Class.forName(enemyType);
+            Constructor con = cl.getConstructor(Bounds.class);
+            con.newInstance(bounds);
+        } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e) {
+            e.printStackTrace();
+        }
+    }
 
 
 }

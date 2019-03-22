@@ -24,6 +24,12 @@ public class Bounds {
         this.height = bounds.height;
     }
 
+    public double distanceTo (int tX, int tY) {
+        double a = Math.abs( (x - tX));
+        double b = Math.abs( (y - tY));
+        return(Math.sqrt((a*a) + (b*b)));
+    }
+
     public int scaledWidth() {
         return scaledWidthNumber(width);
     }

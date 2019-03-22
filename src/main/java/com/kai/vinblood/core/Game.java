@@ -2,16 +2,15 @@ package com.kai.vinblood.core;
 
 import com.kai.vinblood.display.Display;
 import com.kai.vinblood.display.PlayerInfoDisplay;
+import com.kai.vinblood.levels.LevelController;
 import com.kai.vinblood.net.ClientConnection;
 import com.kai.vinblood.objs.ObjectController;
-import com.kai.vinblood.objs.entities.enemies.Goblin;
 import com.kai.vinblood.objs.entities.player.Player;
-import com.kai.vinblood.util.Bounds;
 import com.kai.vinblood.util.Globals;
 
 public class Game implements Updatable {
     public enum GameState{MENU, SETTINGS, RUNNING, DEATH};
-    static GameState state = GameState.MENU;
+    public static GameState state = GameState.MENU;
 
     private static String playerName;
     private static Player player;
@@ -44,9 +43,8 @@ public class Game implements Updatable {
                 player.getBounds().x = 550;
                 player.getBounds().y = 550;
 
-                for (int i = 0; i < 5; i++) {
-                    new Goblin(new Bounds((int)(Math.random() * 1100), (int)(Math.random() * 700)));
-                }
+
+                LevelController.start();
                 break;
             case DEATH:
 

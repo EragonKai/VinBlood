@@ -9,6 +9,8 @@ public class Player extends Entity {
     private PlayerInput playerInput;
     private PlayerInventory playerInventory;
 
+    private int level = 0;
+
     public Player() {
         super(new Bounds(30, 30, 32, 40), ResourceManager.getImage("wizzard_f_idle_anim_f0", 32, 40));
         playerInput = new PlayerInput(this);
@@ -36,7 +38,16 @@ public class Player extends Entity {
         playerInput.resizeImage();
     }
 
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
     public PlayerInput getPlayerInput() {
         return playerInput;
     }
+    public PlayerInventory getPlayerInventory() { return playerInventory; }
 }
