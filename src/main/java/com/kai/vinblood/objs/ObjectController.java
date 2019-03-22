@@ -34,6 +34,9 @@ public class ObjectController implements Updatable {
             object.update();
 
             if(object.isMarkedForRemoval()) {
+                if (object instanceof Enemy) {
+                    LevelController.getInstance().getCurrentLevel().enemyDied();
+                }
                 iterator.remove();
                 updateScreen = true;
             }
@@ -54,17 +57,6 @@ public class ObjectController implements Updatable {
             LevelController.getInstance().update();
         }
 
-    }
-
-    public int getEnemyNumber() {
-        int amount = 0;
-        for (GameObject g: gameObjects) {
-            if (g instanceof Enemy) {
-                amount++;
-            }
-        }
-
-        return amount;
     }
 
     public void add(GameObject object) {

@@ -31,6 +31,10 @@ public class LevelController implements Updatable {
         currentLevel = new Level(Game.getPlayer().getLevel());
     }
 
+    public Level getCurrentLevel() {
+        return currentLevel;
+    }
+
     public static LevelController getInstance() {
         if (instance == null) {
             start();

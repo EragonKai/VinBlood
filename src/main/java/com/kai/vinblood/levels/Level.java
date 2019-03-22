@@ -13,18 +13,24 @@ import java.util.List;
 public class Level implements Updatable {
     private boolean over = false;
     private int levelNum;
+    private int existingEnemies;
     private List<ID> enemiesToGenerate;
 
     public Level(int levelNum) {
         this.levelNum = levelNum;
         enemiesToGenerate = LevelGen.generateEnemies(levelNum);
+        existingEnemies = enemiesToGenerate.size();
         generate();
+    }
+
+    public void enemyDied() {
+        existingEnemies--;
     }
 
     @Override
     public void update() {
         //Temporary:
-        if (ObjectController.getInstance().getEnemyNumber() == 0) {
+        if (existingEnemies == 0) {
             setOver(true);
         }
     }

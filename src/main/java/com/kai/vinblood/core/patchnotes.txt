@@ -26,3 +26,11 @@
     - item tooltip now properly displays stats
     - player stats now display
     - player info display now sort of works when the screen is resized
+
+3/21/19:
+    - changed the item tooltip to be less ugly
+    - added more support for hud components
+    - added VButton
+    - added a way to view what rusts you had equipped
+    - added level controller/level gen
+    - implemented levels, they just progress immediately after all enemies are dead
