@@ -27,6 +27,8 @@ public class Weapon extends Item {
         this.projectiles = new HashMap<>(base.getProjectiles());
         this.damage = base.getDamage();
         this.rateOfAttack = base.getRateOfAttack();
+
+        setType("Weapon");
     }
 
     public Weapon(BufferedImage image, List<ItemBehavior> behaviors, HashMap<ID, Projectile> projectiles, ID id) {

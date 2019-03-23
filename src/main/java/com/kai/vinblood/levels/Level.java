@@ -1,8 +1,7 @@
 package com.kai.vinblood.levels;
 
 import com.kai.vinblood.core.Updatable;
-import com.kai.vinblood.objs.ObjectController;
-import com.kai.vinblood.objs.entities.enemies.load.EnemyLoader;
+import com.kai.vinblood.objs.entities.enemies.EnemyLoader;
 import com.kai.vinblood.util.ID;
 
 import java.util.List;

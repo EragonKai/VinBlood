@@ -1,6 +1,7 @@
 package com.kai.vinblood.core;
 
 import com.kai.vinblood.display.HUDController;
+import com.kai.vinblood.util.Bounds;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -40,7 +41,7 @@ public class Input implements KeyListener, MouseListener, Updatable {
 
                 break;
             case RUNNING:
-                Game.getPlayer().shoot(e.getX(), e.getY());
+                Game.getPlayer().shoot(Bounds.unScaledWidthNumber(e.getX()), Bounds.unScaledHeightNumber(e.getY()));
                 break;
             case DEATH:
 
@@ -103,7 +104,7 @@ public class Input implements KeyListener, MouseListener, Updatable {
     public void update() {
         if (Game.state == Game.GameState.RUNNING) {
             if (mouseHeld) {
-                Game.getPlayer().shoot(mouseX, mouseY);
+                Game.getPlayer().shoot(Bounds.unScaledWidthNumber(mouseX), Bounds.unScaledHeightNumber(mouseY));
             }
         }
 

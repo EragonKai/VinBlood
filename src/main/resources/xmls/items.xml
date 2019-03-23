@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <items>
-    <Item id="0000" name="Basic Weapon" type="weapon" imagex="0" imagey="0">
+    <Item id="0000" name="Basic Weapon" rarity="common" type="weapon" imagex="0" imagey="0">
         <stat id="damage">5</stat>
         <stat id="rate of attack">5</stat>
         <stat id="swiftness">5</stat>
@@ -9,13 +9,16 @@
         <projectile id="0" imagex="8" imagey="0" width="8" height="8" speed="30" variance="50"/>
     </Item>
 
-    <Item id="0001" name="Basic Rune" type="rune" imagex="0" imagey="0">
+    <Item id="0001" name="Basic Rune" rarity="common" type="rune" imagex="0" imagey="0">
         <skill id="teleport"/>
         <stat id="bloodthirst">20</stat>
     </Item>
 
-    <Item id="0002" name="Basic Rust" type="rust" imagex="0" imagey="0">
+    <Item id="0002" name="Basic Rust" rarity="common" type="rust" imagex="0" imagey="0">
         <stat id="max health">5</stat>
     </Item>
+
+    <Item id="3" name="TestRare" rarity="rare" type="rust" imagex="0" imagey="8"/>
+    <Item id="4" name="TestLegendary" rarity="legendary" type="rust" imagex="8" imagey="0"/>
 
 </items>

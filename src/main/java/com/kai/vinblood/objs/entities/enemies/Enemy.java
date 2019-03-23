@@ -1,6 +1,7 @@
 package com.kai.vinblood.objs.entities.enemies;
 
 import com.kai.vinblood.core.Game;
+import com.kai.vinblood.levels.LootInstanceGenerator;
 import com.kai.vinblood.objs.entities.Entity;
 import com.kai.vinblood.objs.entities.Projectile;
 import com.kai.vinblood.util.Bounds;
@@ -96,6 +97,13 @@ public class Enemy extends Entity {
 
     public Map<ID, Double> getDrops() {
         return drops;
+    }
+
+    @Override
+    public void die() {
+        LootInstanceGenerator.generateLoot(getBounds(), getDrops());
+        super.die();
+
     }
 
     @Override

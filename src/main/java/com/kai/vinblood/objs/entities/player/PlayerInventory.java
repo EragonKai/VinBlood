@@ -3,6 +3,7 @@ package com.kai.vinblood.objs.entities.player;
 import com.kai.vinblood.core.Updatable;
 import com.kai.vinblood.objs.items.*;
 import com.kai.vinblood.util.Bounds;
+import com.kai.vinblood.util.Globals;
 import com.kai.vinblood.util.ID;
 
 import java.util.ArrayList;
@@ -18,11 +19,10 @@ public class PlayerInventory implements Updatable {
     private Rune equippedRune;
     private List<Rust> equippedRusts;
 
-    private List<Item> spareInventory;
+    private List<Item>spareInventory;
 
     private static final Bounds EQUIP_WEP_BOUNDS = new Bounds(62, 602, 32, 32);
     private static final Bounds EQUIP_RUNE_BOUNDS = new Bounds(98, 602, 32, 32);
-    private static final Bounds INVIS_BOUNDS = new Bounds(-500, -500, 32, 32);
 
     public PlayerInventory(Player owner) {
         this.owner = owner;
@@ -33,6 +33,9 @@ public class PlayerInventory implements Updatable {
         equipWeapon(ItemLoader.getWeapon(new ID(0)));
         equipRune(ItemLoader.getRune(new ID(1)));
         equipRust(ItemLoader.getRust(new ID(2)));
+/*
+        equipRust(ItemLoader.getRust(new ID(3)));
+*/
     }
 
     @Override
@@ -65,7 +68,7 @@ public class PlayerInventory implements Updatable {
     }
 
     public void equipRust(Rust newRust) {
-        Rust rust = new Rust(owner, new Bounds(INVIS_BOUNDS), newRust);
+        Rust rust = new Rust(owner, new Bounds(Globals.INVIS_BOUNDS), newRust);
         rust.setVisible(false);
         equippedRusts.add(rust);
     }

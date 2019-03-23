@@ -1,4 +1,4 @@
-package com.kai.vinblood.objs.entities.enemies.load;
+package com.kai.vinblood.objs.entities.enemies.behaviors;
 
 import com.kai.vinblood.objs.GameObject;
 import com.kai.vinblood.objs.entities.enemies.Enemy;

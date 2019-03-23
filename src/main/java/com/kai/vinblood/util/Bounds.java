@@ -54,4 +54,21 @@ public class Bounds {
         return (int)((double)start/700 * Display.DISPLAY_HEIGHT);
     }
 
+    public static int unScaledWidthNumber(int scaled) {
+        return (int)((double)scaled * 1100/Display.DISPLAY_WIDTH);
+    }
+
+    public static int unScaledHeightNumber(int scaled) {
+        return (int)((double)scaled * 700 / Display.DISPLAY_HEIGHT);
+    }
+
+    @Override
+    public String toString() {
+        return "Bounds{" +
+                "x=" + x +
+                ", y=" + y +
+                ", width=" + width +
+                ", height=" + height +
+                '}';
+    }
 }

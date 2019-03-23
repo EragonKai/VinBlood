@@ -17,6 +17,8 @@ public class Rune extends Item {
     public Rune(Entity owner, Bounds bounds, Rune base) {
         super(owner, bounds, base);
         this.skill = base.getSkill();
+
+        setType("Rune");
     }
 
     public Rune(BufferedImage image, List<ItemBehavior> behaviors, Skill skill, ID id) {

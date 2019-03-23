@@ -21,8 +21,10 @@ import java.util.List;
  */
 public abstract class Item extends GameObject implements ItemBehavior, Hoverable {
     private List<ItemBehavior> behaviors;
+    private Rarity rarity;
     protected Entity owner;
     private ID id;
+    private String type = "Item";
 
     protected boolean hoveredOver = false;
     protected int image_size = 192;
@@ -35,16 +37,12 @@ public abstract class Item extends GameObject implements ItemBehavior, Hoverable
         this.id = base.getID();
 
         setPhysical(false);
+        setRarity(base.getRarity());
 
         resizeImage();
 
         HUDController.getInstance().addHoverable(this);
         setDisplayLayer(Display.Layer.ITEM.getLayer());
-    }
-
-    @Override
-    public boolean checkCollision(int otherX, int otherY) {
-        return checkCollisionWithMouse(otherX, otherY);
     }
 
     public Item(BufferedImage image, List<ItemBehavior> behaviors, ID id) {
@@ -63,6 +61,11 @@ public abstract class Item extends GameObject implements ItemBehavior, Hoverable
     }
 
     @Override
+    public boolean checkCollision(int otherX, int otherY) {
+        return checkCollisionWithMouse(otherX, otherY);
+    }
+
+    @Override
     public void onEquip(Entity owner) {
         behaviors.forEach((b) -> b.onEquip(owner));
     }
@@ -70,24 +73,6 @@ public abstract class Item extends GameObject implements ItemBehavior, Hoverable
     @Override
     public void onUnEquip(Entity owner) {
         behaviors.forEach((b) -> b.onUnEquip(owner));
-    }
-
-    public List<TargetedItemBehavior> getTargeted() {
-        List<TargetedItemBehavior> targetedItemBehaviors = new ArrayList<>();
-        behaviors.forEach((b) -> {
-            if (b instanceof TargetedItemBehavior) {
-                targetedItemBehaviors.add((TargetedItemBehavior)b);
-            }
-        });
-        return targetedItemBehaviors;
-    }
-
-    public ID getID() {
-        return id;
-    }
-
-    public List<ItemBehavior> getBehaviors() {
-        return behaviors;
     }
 
     @Override
@@ -130,23 +115,31 @@ public abstract class Item extends GameObject implements ItemBehavior, Hoverable
             int inc = g.getFontMetrics().getAscent()+5;
             int currentLineY = y+40 + inc;
 
-            g.setColor(new Color(56, 160, 170));
+            g.setColor(getRarity().getColor());
             if (this instanceof Weapon) {
                 Weapon weapon = (Weapon) this;
                 g.drawString("damage: " + weapon.getDamage(), x+20, currentLineY);
                 currentLineY += inc;
                 g.drawString("firerate: " + weapon.getRateOfAttack(), x+20, currentLineY);
+                currentLineY+=inc;
             } else if (this instanceof Rune) {
                 Rune rune = (Rune) this;
                 g.drawString(rune.getSkill().getName(), x+20, currentLineY);
+                currentLineY+=inc;
             }
+
+            g.setColor(getRarity().getColor());
+            g.drawString("Type: " + type, x+20, currentLineY);
+            currentLineY+=inc;
+            g.drawString("Rarity: " + getRarity(), x+20, currentLineY);
 
             g.setColor(new Color(19, 30 ,53));
             g.drawLine(x+10, currentLineY+5, x+image_size-10, currentLineY+5);
             currentLineY += inc;
             currentLineY += 5;
 
-            g.setColor(new Color(56, 160, 170));
+            g.setColor(getRarity().getColor());
+
             for (ItemBehavior b: behaviors) {
                 g.drawString(b.getDescription(), x+20, currentLineY);
                 currentLineY += inc;
@@ -163,6 +156,39 @@ public abstract class Item extends GameObject implements ItemBehavior, Hoverable
     public String getDescription() {
         return this.toString();
     }
+
+    public Rarity getRarity() {
+        return rarity;
+    }
+
+    public void setRarity(Rarity rarity) {
+        this.rarity = rarity;
+    }
+
+    public boolean isHoveredOver() {
+        return hoveredOver;
+    }
+
+    public void setType(String type) { this.type = type;}
+
+    public List<TargetedItemBehavior> getTargeted() {
+        List<TargetedItemBehavior> targetedItemBehaviors = new ArrayList<>();
+        behaviors.forEach((b) -> {
+            if (b instanceof TargetedItemBehavior) {
+                targetedItemBehaviors.add((TargetedItemBehavior)b);
+            }
+        });
+        return targetedItemBehaviors;
+    }
+
+    public ID getID() {
+        return id;
+    }
+
+    public List<ItemBehavior> getBehaviors() {
+        return behaviors;
+    }
+
 
     @Override
     public String toString() {

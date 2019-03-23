@@ -14,6 +14,8 @@ public class Rust extends Item {
 
     public Rust(Entity owner, Bounds bounds, Rust base) {
         super(owner, bounds, base);
+
+        setType("Rust");
     }
 
     public Rust(BufferedImage image, List<ItemBehavior> behaviors, ID id) {

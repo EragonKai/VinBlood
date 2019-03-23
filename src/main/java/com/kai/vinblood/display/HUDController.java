@@ -46,4 +46,12 @@ public class HUDController {
             }
         });
     }
+
+    public List<Hoverable> getHoverableList() {
+        return hoverableList;
+    }
+
+    public List<Clickable> getClickableList() {
+        return clickableList;
+    }
 }

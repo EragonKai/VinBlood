@@ -15,6 +15,9 @@ public class Player extends Entity {
         super(new Bounds(30, 30, 32, 40), ResourceManager.getImage("wizzard_f_idle_anim_f0", 32, 40));
         playerInput = new PlayerInput(this);
         playerInventory = new PlayerInventory(this);
+
+        /*statManager.setStat("max health", 1000);
+        statManager.setStat("health", getStat("max health").getValue());*/
     }
 
     public void shoot(int targetX, int targetY) {

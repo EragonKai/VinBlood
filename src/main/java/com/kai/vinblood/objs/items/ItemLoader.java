@@ -3,7 +3,7 @@ package com.kai.vinblood.objs.items;
 import com.kai.vinblood.core.ResourceManager;
 import com.kai.vinblood.objs.entities.Entity;
 import com.kai.vinblood.objs.entities.Projectile;
-import com.kai.vinblood.objs.entities.enemies.load.EnemyLoader;
+import com.kai.vinblood.objs.entities.enemies.EnemyLoader;
 import com.kai.vinblood.objs.entities.player.skills.Skill;
 import com.kai.vinblood.util.ID;
 import org.w3c.dom.Document;
@@ -141,6 +141,7 @@ public class ItemLoader {
                     break;
             }
 
+            item.setRarity(Rarity.valueOf(itemElement.getAttribute("rarity")));
             items.put(itemID, item);
         }
 
@@ -161,5 +162,7 @@ public class ItemLoader {
     public static Rust getRust(ID id) {
         return (Rust)items.get(id);
     }
+
+    public static Item getItem(ID id) { return items.get(id);}
 
 }

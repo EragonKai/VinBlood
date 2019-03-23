@@ -19,9 +19,9 @@ public abstract class GameObject implements Updatable {
 
     public GameObject(Bounds bounds, BufferedImage image) {
         this.image = image;
-        this.bounds = bounds;
 
         if (bounds != null) {
+            this.bounds = new Bounds(bounds);
             ObjectController.getInstance().add(this);
         }
     }
@@ -34,7 +34,8 @@ public abstract class GameObject implements Updatable {
     }
 
     public boolean checkCollisionWithMouse(int otherX, int otherY) {
-        return (otherX > getBounds().scaledX() && otherX < getBounds().scaledX() + getBounds().scaledWidth() && otherY > getBounds().scaledY() && otherY < getBounds().scaledY() + getBounds().scaledHeight());
+        return (otherX > getBounds().scaledX() && otherX < getBounds().scaledX() + getBounds().scaledWidth()
+                && otherY > getBounds().scaledY() && otherY < getBounds().scaledY() + getBounds().scaledHeight());
     }
 
     public double distanceTo (int tX, int tY) {

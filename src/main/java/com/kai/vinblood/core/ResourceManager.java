@@ -22,20 +22,21 @@ public class ResourceManager {
     private static Map<String, BufferedImage> images = new HashMap<>();
 
     static {
-        //TODO: Just loop through all the files in the dir instead of manually loading them.
-        load("rusts");
-        load("runes");
-        load("weapons");
-        load("projectiles");
-        load("itemtooltip");
-        load("playerinfodisplay");
-        load("button");
-        load("inventory");
-
-        File dir = new File("src/main/resources/images/0x72sprites/");
-        File[] listOfFiles = dir.listFiles();
-        for (File f: listOfFiles) {
-            load(f.getName().replaceAll("\\.png", ""), "/images/0x72sprites/" + f.getName());
+        File dir1 = new File("src/main/resources/images");
+        File[] listOfFiles1 = dir1.listFiles();
+        for (File f: listOfFiles1) {
+            if (f.isFile()) {
+                load(f.getName().replaceAll("\\.png", ""));
+            }
+            if (f.isDirectory()) {
+                File dir = new File(f.getPath());
+                File[] listOfFiles = dir.listFiles();
+                for (File f1 : listOfFiles) {
+                    if (f1.isFile()) {
+                        load(f1.getName().replaceAll("\\.png", ""), "/images/" + f.getName() + "/" + f1.getName());
+                    }
+                }
+            }
         }
     }
 

@@ -6,7 +6,9 @@
         <stat id="swiftness">30</stat>
         <stat id="rate of attack">4</stat>
         <stat id="damage">1</stat>
-        <drop id="2" name="Basic Rust" rate="0.05"/>
+        <drop id="2" name="Basic Rust" rate="0.1"/>
+        <drop id="3" name="TestRare" rate="0.02"/>
+        <drop id="4" name="TestLegendary" rate="0.005"/>
     </Enemy>
     <Enemy id="0001" name="Goblin" image="goblin_idle_anim_f0" width="20" height="20">
         <stat id="max health">15</stat>
@@ -14,7 +16,9 @@
         <stat id="rate of attack">3</stat>
         <stat id="damage">0</stat>
         <projectile id="0" imagex="0" imagey="0" width="8" height="8" speed="45" variance="15" damage="3"/>
-        <drop id="2" name="Basic Rust" rate="0.05"/>
+        <drop id="2" name="Basic Rust" rate="0.1"/>
+        <drop id="3" name="TestRare" rate="0.02"/>
+        <drop id="4" name="TestLegendary" rate="0.005"/>
     </Enemy>
 
 </enemies>

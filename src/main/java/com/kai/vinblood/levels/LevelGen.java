@@ -30,7 +30,7 @@ public class LevelGen {
         do {
             bounds.x = (int)(Math.random() * Display.DISPLAY_WIDTH);
             bounds.y = (int)(Math.random() * Display.DISPLAY_HEIGHT);
-        } while (bounds.distanceTo(Game.getPlayer().getCenterX(), Game.getPlayer().getCenterY()) > MIN_DISTANCE_TO_PLAYER);
+        } while (bounds.distanceTo(Game.getPlayer().getCenterX(), Game.getPlayer().getCenterY()) < MIN_DISTANCE_TO_PLAYER);
 
         return bounds;
     }

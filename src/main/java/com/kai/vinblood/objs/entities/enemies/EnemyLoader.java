@@ -1,8 +1,7 @@
-package com.kai.vinblood.objs.entities.enemies.load;
+package com.kai.vinblood.objs.entities.enemies;
 
 import com.kai.vinblood.core.ResourceManager;
 import com.kai.vinblood.objs.entities.Projectile;
-import com.kai.vinblood.objs.entities.enemies.Enemy;
 import com.kai.vinblood.util.Bounds;
 import com.kai.vinblood.util.ID;
 import org.w3c.dom.Document;
@@ -22,8 +21,6 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
-
-import com.kai.vinblood.objs.entities.enemies.*;
 
 public class EnemyLoader {
     private EnemyLoader() {}

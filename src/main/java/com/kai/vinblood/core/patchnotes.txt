@@ -34,3 +34,21 @@
     - added a way to view what rusts you had equipped
     - added level controller/level gen
     - implemented levels, they just progress immediately after all enemies are dead
+
+3/22/19:
+    - loot instance generation from enemy drops
+    - loot bag sprites correspond to the highest rarity inside
+    - changed enemy package structure
+
+3/23/19:
+    - fixed shooting when screen was resized
+    - all images in /images/ are loaded automatically (including ones that are 1 directory lower)
+    - items are now displayed in a loot bag when the player is walking over them (this took so long)
+    - item tooltip now displays the item's type (weapon/rune/rust)
+
+goals for today:
+    4. equipping/un-equipping items with context menu
+    5. display health/mana
+
+
+I NEED TO THINK OF MORE STATS AHHHHH
