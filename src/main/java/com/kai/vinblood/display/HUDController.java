@@ -14,19 +14,23 @@ public class HUDController {
     }
 
     List<Hoverable> hoverableList;
+    List<Hoverable> hoverableToAdd;
     List<Clickable> clickableList;
+    List<Clickable> clickableToAdd;
 
     private HUDController() {
         hoverableList = new ArrayList<>();
         clickableList = new ArrayList<>();
+        hoverableToAdd = new ArrayList<>();
+        clickableToAdd = new ArrayList<>();
     }
 
     public void addHoverable(Hoverable h) {
-        hoverableList.add(h);
+        hoverableToAdd.add(h);
     }
 
     public void addClickable(Clickable c) {
-        clickableList.add(c);
+        clickableToAdd.add(c);
     }
 
     public void doHovers(int mouseX, int mouseY) {
@@ -37,6 +41,11 @@ public class HUDController {
                 h.onNotHovered();
             }
         });
+
+        if (hoverableToAdd.size() > 0) {
+            hoverableList.addAll(hoverableToAdd);
+            hoverableToAdd.clear();
+        }
     }
 
     public void doClicks(int mouseX, int mouseY) {
@@ -45,6 +54,11 @@ public class HUDController {
                 c.onClick();
             }
         });
+
+        if (clickableToAdd.size() > 0) {
+            clickableList.addAll(clickableToAdd);
+            clickableToAdd.clear();
+        }
     }
 
     public List<Hoverable> getHoverableList() {

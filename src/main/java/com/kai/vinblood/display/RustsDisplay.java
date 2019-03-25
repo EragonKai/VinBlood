@@ -18,7 +18,7 @@ public class RustsDisplay extends HUDComponent implements Clickable {
 
     private List<Rust> rusts = new ArrayList<>();
 
-    private static final Bounds TILE_BOUNDS = new Bounds(37, 454, 33, 35);
+    private static final Bounds TILE_BOUNDS = new Bounds(37, 454, 35, 35);
 
     public RustsDisplay() {
         super(new Bounds(0,415,495, 185), ResourceManager.getImage("inventory"));
@@ -45,6 +45,7 @@ public class RustsDisplay extends HUDComponent implements Clickable {
             x += width;
             if (x >= 386) {
                 y += height;
+                x = TILE_BOUNDS.x;
             }
         }
     }

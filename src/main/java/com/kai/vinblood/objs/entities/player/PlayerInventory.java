@@ -50,9 +50,11 @@ public class PlayerInventory implements Updatable {
         if (equippedWeapon != null) {
             oldWeapon = equippedWeapon;
             oldWeapon.onUnEquip(owner);
+            oldWeapon.setEquipped(false);
         }
         equippedWeapon = new Weapon(owner, new Bounds(EQUIP_WEP_BOUNDS), newWeapon);
         newWeapon.onEquip(owner);
+        newWeapon.setEquipped(true);
         return oldWeapon;
     }
 
@@ -61,15 +63,18 @@ public class PlayerInventory implements Updatable {
         if (equippedRune != null) {
             oldRune = equippedRune;
             oldRune.onUnEquip(owner);
+            oldRune.setEquipped(false);
         }
         equippedRune = new Rune(owner, new Bounds(EQUIP_RUNE_BOUNDS), newRune);
         newRune.onEquip(owner);
+        newRune.setEquipped(true);
         return oldRune;
     }
 
     public void equipRust(Rust newRust) {
         Rust rust = new Rust(owner, new Bounds(Globals.INVIS_BOUNDS), newRust);
         rust.setVisible(false);
+        rust.setEquipped(true);
         equippedRusts.add(rust);
     }
 

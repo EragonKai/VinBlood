@@ -19,7 +19,7 @@ public class PlayerInfoDisplay extends HUDComponent{
     private static final Bounds SWIFTNESS_BOUNDS = new Bounds(15, 669);
     private static final Bounds DEFENSE_BOUNDS = new Bounds(15, 685);
 
-    private static final Bounds RUSTS_BUTTON_BOUNDS = new Bounds(0, 600, 60, 32);
+    private static final Bounds RUSTS_BUTTON_BOUNDS = new Bounds(1, 600, 60, 32);
     private static final Bounds RUST_FILL_BOUNDS = new Bounds(7, 608, 49, 17);
     private static final Bounds RUST_TEXT_FILL_BOUNDS = new Bounds(12, 603, 49, 17);
     private VButton rustButton;
@@ -40,7 +40,7 @@ public class PlayerInfoDisplay extends HUDComponent{
             @Override
             public void draw(Graphics g) {
                 super.draw(g);
-                g.setColor(new Color(56, 160, 170));
+                g.setColor(new Color(32, 49, 84));
                 g.setFont(new VFont(0.9));
                 g.drawString("Rusts", RUST_TEXT_FILL_BOUNDS.scaledX(), RUST_TEXT_FILL_BOUNDS.scaledY()+RUST_TEXT_FILL_BOUNDS.scaledHeight());
             }

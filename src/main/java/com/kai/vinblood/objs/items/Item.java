@@ -1,9 +1,7 @@
 package com.kai.vinblood.objs.items;
 
 import com.kai.vinblood.core.ResourceManager;
-import com.kai.vinblood.display.Display;
-import com.kai.vinblood.display.HUDController;
-import com.kai.vinblood.display.Hoverable;
+import com.kai.vinblood.display.*;
 import com.kai.vinblood.objs.GameObject;
 import com.kai.vinblood.objs.ObjectController;
 import com.kai.vinblood.objs.entities.Entity;
@@ -19,12 +17,13 @@ import java.util.List;
 /**
  * @author Kai on Mar 20, 2019
  */
-public abstract class Item extends GameObject implements ItemBehavior, Hoverable {
+public abstract class Item extends GameObject implements ItemBehavior, Hoverable, Clickable {
     private List<ItemBehavior> behaviors;
     private Rarity rarity;
     protected Entity owner;
     private ID id;
     private String type = "Item";
+    private boolean equipped = false;
 
     protected boolean hoveredOver = false;
     protected int image_size = 192;
@@ -42,6 +41,7 @@ public abstract class Item extends GameObject implements ItemBehavior, Hoverable
         resizeImage();
 
         HUDController.getInstance().addHoverable(this);
+        HUDController.getInstance().addClickable(this);
         setDisplayLayer(Display.Layer.ITEM.getLayer());
     }
 
@@ -86,6 +86,11 @@ public abstract class Item extends GameObject implements ItemBehavior, Hoverable
     }
 
     @Override
+    public void onClick() {
+        new ItemContextMenu(getBounds(), this);
+    }
+
+    @Override
     public void draw(Graphics g) {
         super.draw(g);
         if (hoveredOver) {
@@ -116,6 +121,17 @@ public abstract class Item extends GameObject implements ItemBehavior, Hoverable
             int currentLineY = y+40 + inc;
 
             g.setColor(getRarity().getColor());
+            g.drawString("Type: " + type, x+20, currentLineY);
+            currentLineY+=inc;
+            g.drawString("Rarity: " + getRarity(), x+20, currentLineY);
+
+            g.setColor(new Color(19, 30 ,53));
+            g.drawLine(x+10, currentLineY+5, x+image_size-10, currentLineY+5);
+            currentLineY += inc;
+            currentLineY += 5;
+
+            g.setColor(getRarity().getColor());
+
             if (this instanceof Weapon) {
                 Weapon weapon = (Weapon) this;
                 g.drawString("damage: " + weapon.getDamage(), x+20, currentLineY);
@@ -127,18 +143,6 @@ public abstract class Item extends GameObject implements ItemBehavior, Hoverable
                 g.drawString(rune.getSkill().getName(), x+20, currentLineY);
                 currentLineY+=inc;
             }
-
-            g.setColor(getRarity().getColor());
-            g.drawString("Type: " + type, x+20, currentLineY);
-            currentLineY+=inc;
-            g.drawString("Rarity: " + getRarity(), x+20, currentLineY);
-
-            g.setColor(new Color(19, 30 ,53));
-            g.drawLine(x+10, currentLineY+5, x+image_size-10, currentLineY+5);
-            currentLineY += inc;
-            currentLineY += 5;
-
-            g.setColor(getRarity().getColor());
 
             for (ItemBehavior b: behaviors) {
                 g.drawString(b.getDescription(), x+20, currentLineY);
@@ -181,6 +185,10 @@ public abstract class Item extends GameObject implements ItemBehavior, Hoverable
         return targetedItemBehaviors;
     }
 
+    public String getType() {
+        return type;
+    }
+
     public ID getID() {
         return id;
     }
@@ -189,6 +197,14 @@ public abstract class Item extends GameObject implements ItemBehavior, Hoverable
         return behaviors;
     }
 
+
+    public boolean isEquipped() {
+        return equipped;
+    }
+
+    public void setEquipped(boolean equipped) {
+        this.equipped = equipped;
+    }
 
     @Override
     public String toString() {

@@ -17,7 +17,7 @@ public class Display extends JPanel implements Updatable {
     private Input i;
 
     public enum Layer{
-        ENTITY(1), HUD(2), ITEM(3);
+        ENTITY(1), HUD(2), ITEM(3), CONTEXT(4);
 
         private int layer;
         Layer(int layer) {

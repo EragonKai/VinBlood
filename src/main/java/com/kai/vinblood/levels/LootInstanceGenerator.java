@@ -14,6 +14,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.*;
 import java.util.List;
+import java.util.function.Predicate;
 
 /**
  * @author Kai on Mar 22, 2019
@@ -99,8 +100,10 @@ public class LootInstanceGenerator {
         public void update() {
             if (contents.size() == 0) {
                 die();
+                System.out.println("yep");
             }
 
+            contents.removeIf((item) -> item == null);
         }
 
         @Override

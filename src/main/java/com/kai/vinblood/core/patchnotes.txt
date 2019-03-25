@@ -45,6 +45,8 @@
     - all images in /images/ are loaded automatically (including ones that are 1 directory lower)
     - items are now displayed in a loot bag when the player is walking over them (this took so long)
     - item tooltip now displays the item's type (weapon/rune/rust)
+    - stopped concurrent modification exceptions w/ hud controller
+    - changed appearance of in game display
 
 goals for today:
     4. equipping/un-equipping items with context menu

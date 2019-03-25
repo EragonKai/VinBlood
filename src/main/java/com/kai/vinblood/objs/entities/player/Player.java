@@ -16,8 +16,8 @@ public class Player extends Entity {
         playerInput = new PlayerInput(this);
         playerInventory = new PlayerInventory(this);
 
-        /*statManager.setStat("max health", 1000);
-        statManager.setStat("health", getStat("max health").getValue());*/
+        statManager.setStat("max health", 1000);
+        statManager.setStat("health", getStat("max health").getValue());
     }
 
     public void shoot(int targetX, int targetY) {
